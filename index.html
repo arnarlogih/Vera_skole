@@ -19,17 +19,6 @@
 </style>
 
 <header>
-    <!-- <nav class="menu">
-        <ul>
-            <li><a href="index.html">Forside</a></li>
-            <li><a href="about.html">Om VERA</a></li>
-            <li><a href="linjer.html">Linjer</a></li>
-            <li><a href="exhibitions.html">Udstillinger<a></li>
-            <li><a href="contact.html">Kontakt<a></li>
-        </ul>
-    </nav> 
-
--->
 
 
 </header>
@@ -42,7 +31,24 @@
     </a>
 
     <!----------------------BURGER MENU------------------------------->
-    <nav class="menu"> MENU </nav>
+
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a class="active" href="index.html">Forside</a>
+            <a href="about.html">Om VERA</a>
+            <a href="linjer.html">Linjer</a>
+            <a href="exhibitions.html">Udstillinger</a>
+            <a href="contact.html">Kontakt Os</a>
+        </div>
+    </div>
+
+    <!-- Use any element to open/show the overlay navigation menu -->
+    <span class="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">MENU</span>
 
 
     <div id="social">
@@ -52,13 +58,12 @@
 
 
 
-
-
     <img src="img/Exhibition/amalie.jpg" alt="image for frontpage" class="box">
 
 
-
 </body>
+
+<script src="js/script.js"></script>
 
 
 </html>
