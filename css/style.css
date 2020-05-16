@@ -144,6 +144,40 @@ body {
     transform: rotate(90deg);
 }
 
+/*-----------------MAIN----------------*/
+
+.parentContainer {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    width: 30%;
+}
+
+.vr {
+    position: absolute;
+    color: #0020d0;
+    font-family: Montserrat;
+    font-weight: bold;
+    top: 150px;
+    left: -90px;
+    font-size: 8em;
+}
+
+.event {
+    position: absolute;
+    color: #0020d0;
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 8em;
+    bottom: 150px;
+    left: 200px;
+}
+
+.frontImage {
+    padding-top: 60px;
+}
+
 /*-----------------LINJER----------------*/
 
 .tilmeld a {

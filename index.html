@@ -9,56 +9,60 @@
 
     <title>Frontpage</title>
 </head>
-<style>
-    body {
-        background-color: #EAE3DE;
-        background-image: url("img/gridbackground.png");
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-    }
-</style>
-
-<header>
-
-
-</header>
-
-
 
 <body>
-    <!----------------------LOGO------------------------------->
-    <a href="index.html"><img class="logo" src="img/logo3.svg" alt="VERA Logo">
-    </a>
 
-    <!----------------------BURGER MENU------------------------------->
+    <header>
+        <!----------------------LOGO------------------------------->
+        <a href="index.html"><img class="logo" src="img/logo3.svg" alt="VERA Logo">
+        </a>
 
-    <div id="myNav" class="overlay">
+        <!----------------------BURGER MENU------------------------------->
 
-        <!-- Button to close the overlay navigation -->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div id="myNav" class="overlay">
 
-        <!-- Overlay content -->
-        <div class="overlay-content">
-            <a class="active" href="index.html">Forside</a>
-            <a href="about.html">Om VERA</a>
-            <a href="linjer.html">Linjer</a>
-            <a href="exhibitions.html">Udstillinger</a>
-            <a href="contact.html">Kontakt Os</a>
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a class="active" href="index.html">Forside</a>
+                <a href="about.html">Om VERA</a>
+                <a href="linjer.html">Linjer</a>
+                <a href="exhibitions.html">Udstillinger</a>
+                <a href="contact.html">Kontakt Os</a>
+            </div>
         </div>
-    </div>
 
-    <!-- Use any element to open/show the overlay navigation menu -->
-    <span class="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">MENU</span>
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span class="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">MENU</span>
 
+    </header>
 
+    <!--------------- SOCIAL MEDIA PLATFORMS ------------->
     <div id="social">
         <a target="_blank" href="https://www.instagram.com/veraskole/" class="instagram"> INSTAGRAM</a>
         <a target="_blank" href="https://www.facebook.com/veraskoleforkunstogdesign/" class="facebook"> FACEBOOK</a>
     </div>
 
+    <main class="grid">
+
+        <!--------------- CONTAINER ------------->
+
+        <div class="parentContainer">
+
+            <div class="vr">VR</div>
+
+            <img src="img/Exhibition/amalie.jpg" alt="image for frontpage" class="frontImage">
+
+            <div class="event"> Exhibition</div>
+
+        </div>
 
 
-    <img src="img/Exhibition/amalie.jpg" alt="image for frontpage" class="box">
+
+    </main>
+
 
 
 </body>
