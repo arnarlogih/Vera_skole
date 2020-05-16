@@ -9,11 +9,11 @@ html {
 }
 
 body {
-    background-color: #EAE3DE;
+    background-color: #eae3de;
 }
 
 .grid {
-    background-image: url('../img/gridbackground.png');
+    background-image: url("../img/gridbackground.png");
     background-repeat: no-repeat;
     background-size: cover;
     margin: 60px 60px 0px 0px;
@@ -144,42 +144,79 @@ body {
 }
 
 /*-----------------STYLING OF THE FRON IMAGE (VR EXHIBITION)----------------*/
-/* #box-search {
-    padding-top: 100px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-} */
-img {
-    padding-left: 60px;
-    display: block;
-    width: 80%;
-}
 
-.thumbnail {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.container {
+    position: relative;
+    margin: auto;
     width: 50%;
-}
-
-.caption {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    font-weight: bold;
 }
 
 .title1,
 .title2 {
     color: #0020d0;
-    font-size: 9em;
-    font-weight: bold;
     font-family: montserrat;
+    font-size: 5em;
+}
+.title1 {
+    position: absolute;
+    top: 20%;
+    left: 20px;
+}
+.title2 {
+    position: absolute;
+    top: 50%;
+    right: 80px;
+    transform: translate(-50%, -50%);
+}
+
+/*-----------------LINJER----------------*/
+
+.tilmeld {
+    font-family: Montserrat;
+    text-decoration: none;
+    color: #eae3de;
+    text-shadow: -1px -1px 0 #0020d0, 1px -1px 0 #0020d0, -1px 1px 0 #0020d0, 1px 1px 0 #0020d0;
+}
+
+.tilmeld a:hover,
+.tilmeld a:focus {
+    color: #0020d0;
+}
+
+/*-----------------FOTOGRAFI----------------*/
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 50px 50px 50px 50px;
+    margin-top: 100px;
+}
+
+.column1,
+.column2 {
+    flex-basis: 100px;
+    flex-grow: 2;
+    padding: 30px;
+}
+
+.linjeheader {
+    color: #0020d0;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 100px;
+}
+
+.billedkunst {
+    font-size: 90px;
+}
+
+.beklædningsdesign {
+    font-size: 50px;
+}
+
+p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8em;
 }
