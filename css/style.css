@@ -126,7 +126,7 @@ html {
 
 /*-----------------LINJER----------------*/
 
-.tilmeld {
+.tilmeld a {
     font-family: Montserrat;
     text-decoration: none;
     color: #eae3de;
