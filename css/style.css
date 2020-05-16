@@ -123,3 +123,55 @@ html {
         display: none;
     }
 }
+
+/*-----------------LINJER----------------*/
+
+.tilmeld {
+    font-family: Montserrat;
+    text-decoration: none;
+    color: #eae3de;
+    text-shadow: -1px -1px 0 #0020d0, 1px -1px 0 #0020d0, -1px 1px 0 #0020d0, 1px 1px 0 #0020d0;
+}
+
+.tilmeld a:hover,
+.tilmeld a:focus {
+    color: #0020d0;
+}
+
+/*-----------------FOTOGRAFI----------------*/
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 50px 50px 50px 50px;
+    margin-top: 100px;
+}
+
+.column1,
+.column2 {
+    flex-basis: 100px;
+    flex-grow: 2;
+    padding: 30px;
+}
+
+.linjeheader {
+    color: #0020d0;
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-size: 100px;
+}
+
+.billedkunst {
+    font-size: 90px;
+}
+
+.beklædningsdesign {
+    font-size: 50px;
+}
+
+p {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.8em;
+}
