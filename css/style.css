@@ -8,6 +8,18 @@ html {
     height: 100%;
 }
 
+body {
+    background-color: #eae3de;
+}
+
+.grid {
+    background-image: url("../img/gridbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 60px 60px 0px 0px;
+}
+
+/*-----------------STYLING OF THE BURGER MENU----------------*/
 .menu {
     position: absolute;
     top: 20px;
@@ -19,19 +31,26 @@ html {
     float: right;
 }
 
+/*-----------------THE BURGER MENU ----------------*/
 /* The Overlay (background) */
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
     height: 100%;
     width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
-    background-color: rgb(0, 32, 208); /* Black fallback color */
-    background-color: rgba(0, 32, 208, 0.9); /* Black w/opacity */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+    background-color: rgb(0, 32, 208);
+    /* Black fallback color */
+    background-color: rgba(0, 32, 208, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
 }
 
 /* Position the content inside the overlay */
@@ -40,10 +59,14 @@ html {
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
-    top: 25%; /* 25% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
 /* The navigation links inside the overlay */
@@ -52,8 +75,10 @@ html {
     text-decoration: none;
     font-size: 70px;
     color: #0020d0;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
     text-shadow: -1px -1px 0 #eae3de, 1px -1px 0 #eae3de, -1px 1px 0 #eae3de, 1px 1px 0 #eae3de;
     text-decoration: none;
 }
@@ -77,6 +102,7 @@ html {
     .overlay a {
         font-size: 20px;
     }
+
     .overlay .closebtn {
         font-size: 40px;
         top: 15px;
@@ -84,6 +110,7 @@ html {
     }
 }
 
+/*-----------------STYLING OF LOGO----------------*/
 .logo {
     position: absolute;
     left: 50px;
@@ -93,11 +120,18 @@ html {
     float: left;
 }
 
+/*-----------------STYLING OF SOCIAL MEDIA----------------*/
+
 .instagram,
 .facebook {
     color: #eae3de;
     text-shadow: -1px -1px 0 #0020d0, 1px -1px 0 #0020d0, -1px 1px 0 #0020d0, 1px 1px 0 #0020d0;
     text-decoration: none;
+}
+
+.overlay2 a:hover,
+.overlay2 a:focus {
+    color: #0020d0;
 }
 
 #social {
@@ -108,20 +142,6 @@ html {
     letter-spacing: 5px;
     font-family: montserrat;
     transform: rotate(90deg);
-}
-
-.box {
-    padding-top: 100px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 25%;
-}
-
-@media screen and (max-width: 750px) {
-    .Grid {
-        display: none;
-    }
 }
 
 /*-----------------LINJER----------------*/
@@ -135,6 +155,7 @@ html {
 
 .tilmeld a:hover,
 .tilmeld a:focus {
+    text-decoration: none;
     color: #0020d0;
 }
 
