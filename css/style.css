@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    background-color: #EAE3DE;
+}
+
+.grid {
+    background-image: url('../img/gridbackground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 60px 60px 0px 0px;
+}
+
+/*-----------------STYLING OF THE BURGER MENU----------------*/
+.menu {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    font-family: montserrat;
+    color: white;
+    font-size: 2.3em;
+    font-weight: bold;
+    float: right;
+}
+
+/*-----------------THE BURGER MENU ----------------*/
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0, 32, 208);
+    /* Black fallback color */
+    background-color: rgba(0, 32, 208, 0.9);
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    font-family: Montserrat;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    top: 25%;
+    /* 25% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 70px;
+    color: #0020d0;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+    text-shadow: -1px -1px 0 #eae3de, 1px -1px 0 #eae3de, -1px 1px 0 #eae3de, 1px 1px 0 #eae3de;
+    text-decoration: none;
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+    color: #ffffff;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {
+        font-size: 20px;
+    }
+
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}
+
+/*-----------------STYLING OF LOGO----------------*/
+.logo {
+    position: absolute;
+    left: 50px;
+    top: 20px;
+    height: 50px;
+    width: auto;
+    float: left;
+}
+
+/*-----------------STYLING OF SOCIAL MEDIA PLATFORMS----------------*/
+.instagram,
+.facebook {
+    color: #eae3de;
+    text-shadow: -1px -1px 0 #0020d0, 1px -1px 0 #0020d0, -1px 1px 0 #0020d0, 1px 1px 0 #0020d0;
+    text-decoration: none;
+}
+
+.overlay2 a:hover,
+.overlay2 a:focus {
+    color: #0020d0;
+}
+
+#social {
+    position: absolute;
+    top: 300px;
+    right: -160px;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    font-family: montserrat;
+    transform: rotate(90deg);
+}
+
+/*-----------------STYLING OF THE FRON IMAGE (VR EXHIBITION)----------------*/
+/* #box-search {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+} */
+img {
+    padding-left: 60px;
+    display: block;
+    width: 80%;
+}
+
+.thumbnail {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+.title1,
+.title2 {
+    color: #0020d0;
+    font-size: 9em;
+    font-weight: bold;
+    font-family: montserrat;
+}
