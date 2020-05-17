@@ -178,6 +178,31 @@ body {
     padding-top: 60px;
 }
 
+/*-----------------DOT----------------*/
+
+.dot {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #f0370b;
+    display: inline-block;
+    animation: moveUpDown 3s linear infinite;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+}
+
+@keyframes moveUpDown {
+    0%,
+    100% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 80px;
+    }
+}
+
 /*-----------------LINJER----------------*/
 
 .tilmeld a {

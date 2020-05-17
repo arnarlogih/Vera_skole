@@ -7,3 +7,10 @@ function openNav() {
 function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
+
+new kursor({
+    type: 1,
+    removeDefaultCursor: true,
+    color: "#f0370b"
+
+});
