@@ -15,8 +15,7 @@ body {
 
 .grid {
     background-image: url("../img/gridbackground.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat: repeat;
     margin: 60px 60px 0px 0px;
 }
 
@@ -218,11 +217,11 @@ body {
     font-size: 100px;
 }
 
-.billedkunst {
+.billedkunstHeadline {
     font-size: 90px;
 }
 
-.beklædningsdesign {
+.beklædningsdesignHeadline {
     font-size: 50px;
 }
 
@@ -232,8 +231,8 @@ p {
     line-height: 1.8em;
 }
 
-
-.post-content-wrapper {
+/* -------------------WRAPPER OF LINJER------------------------- */
+.content-wrapper {
     padding-top: 100px;
     margin-bottom: 2em;
     position: relative;
@@ -241,26 +240,68 @@ p {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
+
 }
 
+h2 {
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+    font-family: montserrat;
+}
+
+
+/* -------------------SMALLER WRAPPER OF LINJER------------------------- */
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.flex-child {
+    width: 100%;
+    height: 200px;
+}
+
+
+.flex-child1 {
+    width: 100%;
+    height: 400px;
+}
+
+.flex-child2 {
+    width: 50%;
+    height: 400px;
+
+}
+
+
+/* -------------------BEKLÆDNINGSDESIGN BOX---------------------- */
 .beklædningsdesign {
     background-color: #0020d0;
+
+}
+
+
+
+/* -------------------BILLEDKUNST BOX---------------------- */
+
+.billedkunst :hover {
+    opacity: 60;
 }
 
 .billedkunst {
     background-color: #0B2A48;
-}
 
-.flex3 {
-    display: flex;
-    flex-wrap: wrap;
 
 }
 
-.arkitektur img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+
+/* -------------------FOTO BOX---------------------- */
+
+.foto :hover {
+    opacity: 60%;
 }
 
 .foto img {
@@ -270,22 +311,140 @@ p {
 }
 
 
-.flex3-child {
+/* -------------------ARKITEKTUR BOX---------------------- */
+.arkitektur {
+    background-color: #0020d0;
+}
+
+.arkitektur :hover {
+    opacity: 60%;
+}
+
+.arkitektur img {
     width: 100%;
-    height: 200px;
+    height: 100%;
+    object-fit: cover;
+    opacity: 80%;
+}
+
+
+/* -------------------ABOUT SECTION---------------------- */
+
+.about {
+
+    text-align: center;
+
+}
+
+h1 {
+    font-family: montserrat;
+    color: #0020d0;
+    font-size: 4em;
+
+}
+
+.frontImage2 {
+    padding-top: 20px;
 
 }
 
 
-
-.flex3-child1 {
-    width: 100%;
-    height: 400px;
-
+.aboutLine1 {
+    display: block;
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    width: 0%;
+    text-align: center;
+    animation: line1 2s linear forwards;
 }
 
-.flex3-child2 {
-    width: 50%;
-    height: 400px;
+@keyframes line1 {
+    from {
+        right: 80%;
+        width: 0%;
+    }
 
+    to {
+        right: 80%;
+        width: 90%;
+    }
+}
+
+
+.aboutLine2 {
+    display: block;
+    position: absolute;
+    top: 80%;
+    right: 40%;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    width: 0%;
+    text-align: center;
+    animation: line2 2s linear forwards;
+}
+
+@keyframes line2 {
+    from {
+        right: 80%;
+        width: 0%;
+    }
+
+    to {
+        right: 80%;
+        width: 70%;
+    }
+}
+
+
+.aboutLine3 {
+    display: block;
+    position: absolute;
+    top: 25%;
+    left: 70%;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    width: 0%;
+    text-align: center;
+    animation: line3 2s linear forwards;
+}
+
+@keyframes line3 {
+    from {
+        right: -60%;
+        width: 20%;
+    }
+
+    to {
+        right: -60%;
+        width: 80%;
+    }
+}
+
+
+
+
+
+
+
+.aboutLine4 {
+    display: block;
+    position: absolute;
+    top: 75%;
+    left: 90%;
+    border-bottom: 3px solid rgb(0, 0, 0);
+    width: 0%;
+    text-align: center;
+    animation: line4 2s linear forwards;
+}
+
+@keyframes line4 {
+    from {
+        right: -60%;
+        width: 20%;
+    }
+
+    to {
+        right: -60%;
+        width: 85%;
+    }
 }
