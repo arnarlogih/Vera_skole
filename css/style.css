@@ -267,11 +267,52 @@ p {
     box-sizing: border-box;
 }
 
-h2 {
+/* ------------------LINJER BOXES------------------------- */
+
+.beklædningsdesign h2 {
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: montserrat;
+    height: 400px;
+}
+
+.arkitektur h2 {
+    vertical-align: middle;
+    background: url(../img/Exhibition/arkitektur.jpg) top left/ cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: montserrat;
+    height: 200px;
+}
+
+.billedkunst h2 {
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-family: montserrat;
+    height: 200px;
+}
+
+.foto h2 {
+    background: url(../img/Exhibition/foto.png) top left/ cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     vertical-align: middle;
     text-align: center;
     color: white;
     font-family: montserrat;
+    height: 400px;
 }
 
 /* -------------------SMALLER WRAPPER OF LINJER------------------------- */
@@ -318,11 +359,13 @@ h2 {
     opacity: 60%;
 }
 
+/*
 .foto img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
+*/
 
 /* -------------------ARKITEKTUR BOX---------------------- */
 .arkitektur {
