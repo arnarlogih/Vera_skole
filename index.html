@@ -33,29 +33,27 @@
 </head>
 
 <body>
+    <!----------------------BURGER MENU------------------------------->
+    <div id="myNav" class="overlay">
+
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+        <!-- Overlay content -->
+        <div class="overlay-content">
+            <a class="active" href="index.html">Forside</a>
+            <a href="about.html">Om VERA</a>
+            <a href="linjer.html">Linjer</a>
+            <a href="exhibitions.html">Udstillinger</a>
+            <a href="contact.html">Kontakt Os</a>
+        </div>
+    </div>
+
 
     <header>
         <!----------------------LOGO------------------------------->
         <a href="index.html"><img class="logo" src="img/logo3.svg" alt="VERA Logo">
         </a>
-
-        <!----------------------BURGER MENU------------------------------->
-
-        <div id="myNav" class="overlay">
-
-            <!-- Button to close the overlay navigation -->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-            <!-- Overlay content -->
-            <div class="overlay-content">
-                <a class="active" href="index.html">Forside</a>
-                <a href="about.html">Om VERA</a>
-                <a href="linjer.html">Linjer</a>
-                <a href="exhibitions.html">Udstillinger</a>
-                <a href="contact.html">Kontakt Os</a>
-            </div>
-        </div>
-
         <!-- Use any element to open/show the overlay navigation menu -->
         <span class="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">MENU</span>
 
