@@ -4,6 +4,7 @@
 }
 
 html {
+    overflow-x: hidden;
     margin: 0;
     height: 100%;
 }
@@ -153,15 +154,18 @@ h1 {
     transform: rotate(90deg);
 }
 
+
 /*-----------------MAIN----------------*/
 
-.parentContainer {
+.parentContainer2 {
     position: relative;
     display: flex;
     flex-wrap: nowrap;
     margin: auto;
     width: 30%;
 }
+
+/*
 
 .vr {
     position: absolute;
@@ -185,7 +189,7 @@ h1 {
 
 .frontImage {
     padding-top: 60px;
-}
+} */
 
 /*-----------------DOT----------------*/
 
@@ -268,7 +272,7 @@ p {
 
 /* -------------------WRAPPER OF LINJER------------------------- */
 .content-wrapper {
-    padding-top: 100px;
+    padding-top: 60px;
     margin-bottom: 2em;
     position: relative;
     max-width: 80%;
@@ -278,6 +282,10 @@ p {
 }
 
 /* ------------------LINJER BOXES------------------------- */
+
+.linjerHeadline {
+    padding-top: 60px;
+}
 
 .beklædningsdesign h2 {
     vertical-align: middle;
@@ -388,6 +396,10 @@ p {
     text-align: center;
 }
 
+.aboutHeadline {
+    padding-top: 60px;
+}
+
 h3 {
     color: black;
     font-family: montserrat;
@@ -401,7 +413,7 @@ h4 {
 }
 
 .frontImage2 {
-    padding-top: 20px;
+    padding-top: 60px;
 }
 
 .aboutLine1 {
@@ -520,5 +532,77 @@ a {
 @media screen and (max-width: 780px) {
     .sectionwrapper p {
         font-size: 0.9rem;
+    }
+}
+
+
+/*---------------- CODE FROM JANNECK ------------*/
+.vrUdstilling2 {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    width: 50%;
+}
+
+.wrapperJannick {
+    max-width: 800px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+h6 {
+    font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #1d01d3;
+    font-size: calc(50px + 60 * ((100vw - 320px) / 1080));
+    margin: 0;
+}
+
+.vrJannick {
+    align-self: start;
+    justify-self: end;
+    margin-right: -3rem;
+    position: relative;
+    z-index: 10;
+}
+
+.udstillingJannick {
+    justify-self: start;
+    align-self: end;
+    margin-left: -50%;
+}
+
+img {
+    width: 100%;
+    width: calc(200px + 400 * ((70vw - 320px) / 1080));
+    object-fit: cover;
+}
+
+@media screen and (max-width: 900px) {
+
+    .flex h2 {
+        font-size: 1em;
+        hyphens: auto;
+    }
+
+    .wrapperJannick {
+
+        margin-top: 50px;
+    }
+
+    .udstillingJannick {
+        position: absolute;
+        top: 200px;
+        left: 110px;
+        hyphens: auto;
+    }
+
+
+
+    .parentContainer2 h3 {
+        font-size: 1em;
+        hyphens: auto;
     }
 }
