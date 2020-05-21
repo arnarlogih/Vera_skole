@@ -1,22 +1,4 @@
-// const baseLink = 'http://arnarlogih.com/vera/kea/wp-json/wp/v2/exhibition?_embed';
-
-// document.addEventListener("DOMContentLoaded", start);
-
-// function start() {
-//     async function getJson() {
-//         let url("http://arnarlogih.com/vera/kea/wp-json/wp/v2/exhibition?_embed");
-//         let jsonData = await fetch(url);
-
-//     }
-// }
-
-
-
-
-
-// ANTON LINI CODE
-
-const baseLink = 'http://arnarlogih.com/vera/kea/wp-json/wp/v2/exhibition?_embed';
+const baseLink = 'https://juliabaldvins.com/anton/wp-json/wp/v2/music?_embed';
 
 const template = document.querySelector('template').content;
 const parent = document.querySelector('.musicContainer');
@@ -35,7 +17,6 @@ function show(data) {
         const artwork = clone.querySelector('div img');
         const trackLink = clone.querySelector('a');
         const trackTitle = clone.querySelector('.songTitle');
-        const trackDate = clone.querySelector('.songDate');
 
         //Sending to subpage
         trackLink.href = 'track.html?id=' + data.id;
@@ -44,7 +25,6 @@ function show(data) {
             data._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url;
 
         trackTitle.textContent = data.title.rendered;
-        trackDate.textContent = data.date;
 
         parent.appendChild(clone);
     });
