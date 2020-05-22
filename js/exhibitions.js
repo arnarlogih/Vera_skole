@@ -44,7 +44,7 @@ function show(data) {
             data._embedded['wp:featuredmedia'][0].media_details.sizes.full.source_url;
 
         trackTitle.textContent = data.title.rendered;
-        trackDate.textContent = data.date;
+        // trackDate.textContent = data.date;
 
         parent.appendChild(clone);
     });
