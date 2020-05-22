@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    width: 100%;
     height: 100%;
     background-color: #eae3de;
 }
@@ -21,6 +22,26 @@ h1 {
     font-size: 4em;
 }
 
+h2 {
+    color: white;
+    font-family: montserrat;
+}
+
+h3 {
+    color: black;
+    font-family: montserrat;
+    font-size: 2.5em;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 1.8em;
+}
+
+
+/*------------------------------------------ BACKGROUND GRID ------------------------------*/
+
 .grid {
     background-image: url("../img/gridbackground.png");
     background-repeat: no-repeat;
@@ -28,8 +49,9 @@ h1 {
     margin: 60px 60px 0px 0px;
 }
 
-/*-----------------STYLING OF THE BURGER MENU----------------*/
+/*------------------------------------------ STYLING OF THE BURGER MENU ------------------------------*/
 .menu {
+    z-index: 90;
     position: fixed;
     top: 20px;
     right: 50px;
@@ -41,6 +63,7 @@ h1 {
 }
 
 /*-----------------THE BURGER MENU ----------------*/
+
 /* The Overlay (background) */
 .overlay {
     /* Height & width depends on how you want to reveal the overlay (see JS below) */
@@ -148,7 +171,7 @@ h1 {
 #social {
     position: fixed;
     top: 300px;
-    right: -160px;
+    right: -190px;
     font-size: 1.5em;
     letter-spacing: 5px;
     font-family: montserrat;
@@ -159,6 +182,7 @@ h1 {
 /*-----------------MAIN----------------*/
 
 .parentContainer2 {
+
     position: relative;
     display: flex;
     flex-wrap: nowrap;
@@ -203,7 +227,7 @@ h1 {
     animation: moveUpDown 3s linear infinite;
     position: absolute;
     bottom: 0;
-    left: 50%;
+    left: 48.1%;
 }
 
 @keyframes moveUpDown {
@@ -294,8 +318,6 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
-    font-family: montserrat;
     height: 400px;
 }
 
@@ -306,8 +328,6 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
-    font-family: montserrat;
     height: 200px;
 }
 
@@ -317,8 +337,6 @@ p {
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
-    font-family: montserrat;
     height: 200px;
 }
 
@@ -329,12 +347,10 @@ p {
     align-items: center;
     vertical-align: middle;
     text-align: center;
-    color: white;
-    font-family: montserrat;
     height: 400px;
 }
 
-/* -------------------SMALLER WRAPPER OF LINJER------------------------- */
+/* ------------------------------- SMALLER WRAPPER OF LINJER ---------------------------------- */
 
 .flex {
     display: flex;
@@ -357,7 +373,7 @@ p {
     height: 400px;
 }
 
-/* -------------------BEKLÆDNINGSDESIGN BOX---------------------- */
+/* ------------------------------------- BEKLÆDNINGSDESIGN BOX ---------------------------------- */
 .beklædningsdesign {
     background-color: #0020d0;
 }
@@ -366,7 +382,7 @@ p {
     background-color: rgba(0, 32, 208, 0.4);
 }
 
-/* -------------------ARKITEKTUR BOX---------------------- */
+/* ---------------------------------------- ARKITEKTUR BOX --------------------------------- */
 .arkitektur {
     background-color: #0020d0;
 }
@@ -375,7 +391,7 @@ p {
     opacity: 60%;
 }
 
-/* -------------------BILLEDKUNST BOX---------------------- */
+/* --------------------------------------- BILLEDKUNST BOX ------------------------------------ */
 
 .billedkunst {
     background-color: #0b2a48;
@@ -385,7 +401,7 @@ p {
     background-color: rgba(0, 0, 100, 0.4);
 }
 
-/* -------------------FOTO BOX---------------------- */
+/* ------------------------------------------- FOTO BOX --------------------------------------- */
 
 .foto :hover {
     opacity: 60%;
@@ -397,34 +413,36 @@ p {
     text-align: center;
 }
 
+
 .aboutHeadline {
     padding-top: 60px;
-}
-
-h3 {
-    color: black;
-    font-family: montserrat;
-    font-size: 2.5em;
-}
-
-h4 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    font-size: 1.8em;
 }
 
 .frontImage2 {
     padding-top: 60px;
 }
 
+.aboutLine1 h3,
+.aboutLine2 h3 {
+    text-align: left;
+}
+
+.aboutLine3 h3,
+.aboutLine4 h3 {
+    text-align: right;
+}
+
+.parentContainer2 a :hover {
+    color: white;
+}
+
+
 .aboutLine1 {
     display: block;
     position: absolute;
     top: 20%;
-    right: 20%;
     border-bottom: 3px solid rgb(0, 0, 0);
     width: 0%;
-    text-align: center;
     animation: line1 2s linear forwards;
 }
 
@@ -436,7 +454,7 @@ h4 {
 
     to {
         right: 70%;
-        width: 90%;
+        width: 80%;
     }
 }
 
@@ -453,13 +471,13 @@ h4 {
 
 @keyframes line2 {
     from {
-        right: 80%;
+        right: 90%;
         width: 0%;
     }
 
     to {
-        right: 80%;
-        width: 70%;
+        right: 90%;
+        width: 80%;
     }
 }
 
@@ -467,7 +485,7 @@ h4 {
     display: block;
     position: absolute;
     top: 25%;
-    left: 70%;
+    left: 80%;
     border-bottom: 3px solid rgb(0, 0, 0);
     width: 0%;
     text-align: center;
@@ -505,71 +523,47 @@ h4 {
 
     to {
         right: -60%;
-        width: 85%;
-    }
-}
-
-/* -------------------FOOTER---------------------- */
-
-.sectionwrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    height: 180px;
-    margin-top: 30px;
-    background-color: #0020d0;
-}
-
-.sectionwrapper p,
-a {
-    padding-top: 80px;
-    color: white;
-    font-family: montserrat;
-    text-align: center;
-    font-size: 1.2em;
-    text-decoration: none;
-}
-
-@media screen and (max-width: 780px) {
-    .sectionwrapper p {
-        font-size: 0.9rem;
+        width: 100%;
     }
 }
 
 
-/*---------------- CODE FROM JANNECK ------------*/
-.vrUdstilling2 {
+
+
+/*---------------------------------------- CODE FROM JANNECK ---------------------------*/
+.vrUdstilling {
     position: relative;
     display: flex;
     flex-wrap: nowrap;
     margin: auto;
     width: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.wrapperJannick {
-    max-width: 800px;
+.UdstillingsWrapper {
+    max-width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
 }
 
-h6 {
+h5 {
     font-family: "montserrat", sans-serif;
     text-transform: uppercase;
     color: #1d01d3;
     font-size: calc(50px + 60 * ((100vw - 320px) / 1080));
-    margin: 0;
 }
 
-.vrJannick {
+.vrHeadline {
     align-self: start;
     justify-self: end;
-    margin-right: -3rem;
+    margin-right: -30%;
     position: relative;
     z-index: 10;
 }
 
-.udstillingJannick {
+.udstillingHeadline {
     justify-self: start;
     align-self: end;
     margin-left: -50%;
@@ -577,38 +571,12 @@ h6 {
 
 img {
     width: 100%;
-    width: calc(200px + 400 * ((70vw - 320px) / 1080));
+    width: calc(150px + 400 * ((70vw - 320px) / 1080));
     object-fit: cover;
 }
 
-@media screen and (max-width: 900px) {
 
-    .flex h2 {
-        font-size: 1em;
-        hyphens: auto;
-    }
-
-    .wrapperJannick {
-
-        margin-top: 50px;
-    }
-
-    .udstillingJannick {
-        position: absolute;
-        top: 200px;
-        left: 110px;
-        hyphens: auto;
-    }
-
-
-
-    .parentContainer2 h3 {
-        font-size: 1em;
-        hyphens: auto;
-    }
-}
-
-/* -----------------------ANTON LINI WEBSITE CODE----------------------- */
+/* ----------------------- BACKEND WORDPRESS - WEBSITE CODE ----------------------- */
 
 .UdstillingerHeadline {
     padding-top: 60px;
@@ -691,4 +659,167 @@ img {
 
 .artwork:hover .artworkTitle {
     opacity: 1;
+}
+
+
+/* ---------------------------------------- FOOTER -------------------------------- */
+
+.sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 180px;
+    background-color: #0020d0;
+}
+
+.sectionwrapper p,
+a {
+    padding-top: 80px;
+    color: white;
+    font-family: montserrat;
+    text-align: center;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+
+
+/*------------------------------------------ MEDIA QUERIES -------------------------------*/
+@media screen and (max-width: 670px) {
+
+    .vrUdstilling {
+        margin-left: 20%;
+    }
+
+    .udstillingHeadline {
+        position: absolute;
+        top: 200px;
+        left: 90px;
+    }
+
+    .frontImage2 {
+        padding-left: 40%;
+    }
+
+    .parentContainer2 h3 {
+        text-align: left;
+    }
+
+    .aboutLine1 {
+        top: 20%;
+        left: -80%;
+        border-bottom: 2px solid black;
+    }
+
+    @keyframes line1 {
+        from {
+            right: -10%;
+            width: 0%;
+        }
+
+        to {
+            right: -10%;
+            width: 170px;
+        }
+    }
+
+    .aboutLine2 {
+        top: 40%;
+        left: -80%;
+        border-bottom: 2px solid black;
+    }
+
+    @keyframes line2 {
+        from {
+            right: -10%;
+            width: 0%;
+        }
+
+        to {
+            right: -10%;
+            width: 170px;
+        }
+    }
+
+    .aboutLine3 {
+        top: 60%;
+        left: -80%;
+        border-bottom: 2px solid black;
+    }
+
+    @keyframes line3 {
+        from {
+            right: -10%;
+            width: 0%;
+        }
+
+        to {
+            right: -10%;
+            width: 170px;
+        }
+    }
+
+    .aboutLine4 {
+        top: 80%;
+        left: -80%;
+        border-bottom: 2px solid black;
+    }
+
+    @keyframes line4 {
+        from {
+            right: -10%;
+            width: 0%;
+        }
+
+        to {
+            right: -10%;
+            width: 170px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 780px) {
+    .sectionwrapper p {
+        font-size: 0.9rem;
+    }
+}
+
+
+@media screen and (max-width: 1500px) {
+    .dot {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .vrUdstilling {
+        padding-top: 50px;
+        hyphens: auto;
+    }
+
+    .udstillingHeadline {
+        hyphens: auto;
+        margin-right: 200px;
+    }
+
+    #social {
+        position: fixed;
+        top: 220px;
+        right: -120px;
+        font-size: 1em;
+        letter-spacing: 4px;
+
+    }
+
+    .flex h2 {
+        font-size: 1em;
+        hyphens: auto;
+    }
+
+    .parentContainer2 h3 {
+        font-size: 1em;
+        hyphens: auto;
+    }
 }

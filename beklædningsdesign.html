@@ -29,17 +29,10 @@
     <title>Frontpage</title>
 </head>
 
-
-
 <body>
 
     <header>
-        <!----------------------LOGO------------------------------->
-        <a href="index.html"><img class="logo" src="img/logo3.svg" alt="VERA Logo">
-        </a>
-
         <!----------------------BURGER MENU------------------------------->
-
         <div id="myNav" class="overlay">
 
             <!-- Button to close the overlay navigation -->
@@ -54,57 +47,77 @@
                 <a href="contact.html">Kontakt Os</a>
             </div>
         </div>
+        <!----------------------LOGO------------------------------->
+        <a href="index.html"><img class="logo" src="img/logo3.svg" alt="VERA Logo">
+        </a>
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span class="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">MENU</span>
+
+
+        <!--------------- SOCIAL MEDIA PLATFORMS ------------->
+
+        <div id="social" class="overlay2">
+            <a target="_blank" href="https://www.instagram.com/veraskole/" class="instagram"> INSTAGRAM</a>
+            <a target="_blank" href="https://www.facebook.com/veraskoleforkunstogdesign/" class="facebook"> FACEBOOK</a>
+        </div>
+
     </header>
-
-
-
-    <!-- Use any element to open/show the overlay navigation menu -->
-    <span class="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">MENU</span>
-
-    <!--------------- SOCIAL MEDIA PLATFORMS ------------->
-    <div id="social" class="overlay2">
-        <a target="_blank" href="https://www.instagram.com/veraskole/" class="instagram"> INSTAGRAM</a>
-        <a target="_blank" href="https://www.facebook.com/veraskoleforkunstogdesign/" class="facebook"> FACEBOOK</a>
-    </div>
 
     <main class="grid">
 
-        <section class="foto-container">
-
-            <div class="wrapper">
-
-                <div class="column1">
-                    <h1 class="linjeheader beklædningsdesignHeadline">Beklædningsdesign</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis auctor est, non egestas lectus
-                        fringilla ut. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
-                        mus. In fermentum non dui sed ultrices. Pellentesque euismod laoreet venenatis. Quisque mattis
-                        ullamcorper est et feugiat. Quisque massa erat, sodales et lobortis a, auctor id purus. Nunc
-                        nisl nisi, tempor ac tristique vel, dapibus ac odio. Aenean ut lobortis nunc. Nam facilisis eu
-                        orci eu luctus. Nulla nulla velit, sollicitudin id quam vitae, laoreet vehicula ipsum. Curabitur
-                        nisi libero, pharetra id metus vitae, sollicitudin ultrices lorem. Praesent sit amet diam magna.
-                        Donec eget mollis est.
 
 
-                    </p><br>
-                    <div class="tilmeld">
-                        <a target="_blank"
-                            href="https://veraskole.dk/formular/tilmelding-til-kurser-efteraar-2020?fbclid=IwAR1Y-zOTq6FpUCalxPq2mOxCWgJupBFxN615ms6LkvotbHdgjAz7ljuZAfc"
-                            class="tilmeld">TILMELD DIG TIL KURSET</a>
-                    </div>
-                </div>
-                <div class="column2">
-                    <img src="img/Exhibition/beklædningsdesign.jpg" alt="linjerfoto">
+        <div class="wrapper">
+
+            <div class="column1">
+                <h1 class="linjeheader beklædningsdesignHeadline">Beklædningsdesign</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis auctor est, non egestas lectus
+                    fringilla ut. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                    mus. In fermentum non dui sed ultrices. Pellentesque euismod laoreet venenatis. Quisque mattis
+                    ullamcorper est et feugiat. Quisque massa erat, sodales et lobortis a, auctor id purus. Nunc
+                    nisl nisi, tempor ac tristique vel, dapibus ac odio. Aenean ut lobortis nunc. Nam facilisis eu
+                    orci eu luctus. Nulla nulla velit, sollicitudin id quam vitae, laoreet vehicula ipsum. Curabitur
+                    nisi libero, pharetra id metus vitae, sollicitudin ultrices lorem. Praesent sit amet diam magna.
+                    Donec eget mollis est.
+
+
+                </p><br>
+                <div class="tilmeld">
+                    <a target="_blank"
+                        href="https://veraskole.dk/formular/tilmelding-til-kurser-efteraar-2020?fbclid=IwAR1Y-zOTq6FpUCalxPq2mOxCWgJupBFxN615ms6LkvotbHdgjAz7ljuZAfc"
+                        class="tilmeld">TILMELD DIG TIL KURSET</a>
                 </div>
             </div>
+            <div class="column2">
+                <img src="img/Exhibition/beklædningsdesign.jpg" alt="linjerfoto">
+            </div>
+        </div>
 
-        </section>
+
 
     </main>
 
 
+    <footer>
+
+        <div class="sectionwrapper">
+
+            <p>
+                Struenseegade 9, 1. th. • 2200 København N • Tlf. 35 39 20 09 • Email: <a target="_blank"
+                    href="mailtoadm@veraskole.dk">adm@veraskole.dk</a>
+            </p>
+
+        </div>
+
+
+    </footer>
+
+
 </body>
 
+<script src="https://unpkg.com/kursor"></script>
 <script src="js/script.js"></script>
+<script src="js/exhibitions.js"></script>
 
 
 </html>

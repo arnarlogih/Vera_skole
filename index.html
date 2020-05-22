@@ -33,74 +33,59 @@
 </head>
 
 <body>
-    <!----------------------BURGER MENU------------------------------->
-    <div id="myNav" class="overlay">
-
-        <!-- Button to close the overlay navigation -->
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-        <!-- Overlay content -->
-        <div class="overlay-content">
-            <a class="active" href="index.html">Forside</a>
-            <a href="about.html">Om VERA</a>
-            <a href="linjer.html">Linjer</a>
-            <a href="exhibitions.html">Udstillinger</a>
-            <a href="contact.html">Kontakt Os</a>
-        </div>
-    </div>
-
 
     <header>
+        <!----------------------BURGER MENU------------------------------->
+        <div id="myNav" class="overlay">
+
+            <!-- Button to close the overlay navigation -->
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+            <!-- Overlay content -->
+            <div class="overlay-content">
+                <a class="active" href="index.html">Forside</a>
+                <a href="about.html">Om VERA</a>
+                <a href="linjer.html">Linjer</a>
+                <a href="exhibitions.html">Udstillinger</a>
+                <a href="contact.html">Kontakt Os</a>
+            </div>
+        </div>
         <!----------------------LOGO------------------------------->
         <a href="index.html"><img class="logo" src="img/logo3.svg" alt="VERA Logo">
         </a>
         <!-- Use any element to open/show the overlay navigation menu -->
         <span class="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">MENU</span>
 
+
+        <!--------------- SOCIAL MEDIA PLATFORMS ------------->
+
+        <div id="social" class="overlay2">
+            <a target="_blank" href="https://www.instagram.com/veraskole/" class="instagram"> INSTAGRAM</a>
+            <a target="_blank" href="https://www.facebook.com/veraskoleforkunstogdesign/" class="facebook"> FACEBOOK</a>
+        </div>
+
     </header>
 
 
-    <!--------------- KURSOR ------------->
-
-    <div id="app">
-
-    </div>
 
 
-    <!--------------- SOCIAL MEDIA PLATFORMS ------------->
 
-    <div id="social" class="overlay2">
-        <a target="_blank" href="https://www.instagram.com/veraskole/" class="instagram"> INSTAGRAM</a>
-        <a target="_blank" href="https://www.facebook.com/veraskoleforkunstogdesign/" class="facebook"> FACEBOOK</a>
-    </div>
 
 
     <main class="grid">
 
 
         <!---------------DEMO FROM JANNECK------------->
-        <div class="vrUdstilling2">
-            <div class="wrapperJannick">
-                <h6 class="vrJannick">VR</h6>
+        <div class="vrUdstilling">
+            <div class="UdstillingsWrapper">
+                <h5 class="vrHeadline">VR</h5>
                 <img src="https://images.unsplash.com/photo-1535385793343-27dff1413c5a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=657&q=80"
-                    alt="">
-                <h6 class="udstillingJannick">Udstilling</h6>
+                    alt="Exhibition">
+                <h5 class="udstillingHeadline">Udstilling</h5>
             </div>
 
         </div>
 
-
-        <!--------------- CONTAINER ------------->
-        <!-- 
-        <div class="parentContainer">
-
-            <div class="vr">VR</div>
-
-            <img src="img/Exhibition/amalie.jpg" alt="image for frontpage" class="frontImage">
-
-            <div class="event"> Exhibition</div>
-
-        </div> -->
 
         <span class="dot"></span>
 
@@ -207,7 +192,7 @@
 
             <p>
                 Struenseegade 9, 1. th. • 2200 København N • Tlf. 35 39 20 09 • Email: <a target="_blank"
-                    href="mailtoadm@veraskole.dk">adm@veraskole.dk</a>
+                    href="mailto:adm@veraskole.dk">adm@veraskole.dk</a>
             </p>
 
         </div>
@@ -219,8 +204,8 @@
 </body>
 
 <script src="https://unpkg.com/kursor"></script>
-
 <script src="js/script.js"></script>
+<script src="js/exhibitions.js"></script>
 
 
 </html>

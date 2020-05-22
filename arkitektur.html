@@ -29,17 +29,10 @@
     <title>Frontpage</title>
 </head>
 
-
-
 <body>
 
     <header>
-        <!----------------------LOGO------------------------------->
-        <a href="index.html"><img class="logo" src="img/logo3.svg" alt="VERA Logo">
-        </a>
-
         <!----------------------BURGER MENU------------------------------->
-
         <div id="myNav" class="overlay">
 
             <!-- Button to close the overlay navigation -->
@@ -54,18 +47,24 @@
                 <a href="contact.html">Kontakt Os</a>
             </div>
         </div>
+        <!----------------------LOGO------------------------------->
+        <a href="index.html"><img class="logo" src="img/logo3.svg" alt="VERA Logo">
+        </a>
+        <!-- Use any element to open/show the overlay navigation menu -->
+        <span class="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">MENU</span>
+
+
+        <!--------------- SOCIAL MEDIA PLATFORMS ------------->
+
+        <div id="social" class="overlay2">
+            <a target="_blank" href="https://www.instagram.com/veraskole/" class="instagram"> INSTAGRAM</a>
+            <a target="_blank" href="https://www.facebook.com/veraskoleforkunstogdesign/" class="facebook"> FACEBOOK</a>
+        </div>
+
     </header>
 
 
 
-    <!-- Use any element to open/show the overlay navigation menu -->
-    <span class="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">MENU</span>
-
-    <!--------------- SOCIAL MEDIA PLATFORMS ------------->
-    <div id="social" class="overlay2">
-        <a target="_blank" href="https://www.instagram.com/veraskole/" class="instagram"> INSTAGRAM</a>
-        <a target="_blank" href="https://www.facebook.com/veraskoleforkunstogdesign/" class="facebook"> FACEBOOK</a>
-    </div>
 
     <main class="grid">
 
@@ -101,10 +100,25 @@
 
     </main>
 
+    <footer>
+
+        <div class="sectionwrapper">
+
+            <p>
+                Struenseegade 9, 1. th. • 2200 København N • Tlf. 35 39 20 09 • Email: <a target="_blank"
+                    href="mailtoadm@veraskole.dk">adm@veraskole.dk</a>
+            </p>
+
+        </div>
+
+
+    </footer>
+
 
 </body>
-
+<script src="https://unpkg.com/kursor"></script>
 <script src="js/script.js"></script>
+<script src="js/exhibitions.js"></script>
 
 
 </html>
