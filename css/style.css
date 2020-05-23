@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -17,19 +19,19 @@ body {
 
 
 h1 {
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     color: #0020d0;
     font-size: 4em;
 }
 
 h2 {
     color: white;
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h3 {
     color: black;
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2.5em;
 }
 
@@ -55,7 +57,7 @@ h4 {
     position: fixed;
     top: 20px;
     right: 50px;
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 2.3em;
     font-weight: bold;
@@ -87,7 +89,7 @@ h4 {
 
 /* Position the content inside the overlay */
 .overlay-content {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
@@ -175,7 +177,7 @@ h4 {
     right: -190px;
     font-size: 1.5em;
     letter-spacing: 5px;
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     transform: rotate(90deg);
 }
 
@@ -246,7 +248,7 @@ h4 {
 /*-----------------LINJER----------------*/
 
 .tilmeld a {
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
     color: #eae3de;
     text-shadow: -1px -1px 0 #0020d0, 1px -1px 0 #0020d0, -1px 1px 0 #0020d0, 1px 1px 0 #0020d0;
@@ -261,6 +263,7 @@ h4 {
 /*-----------------FOTOGRAFI----------------*/
 
 .wrapper {
+    text-align: justify;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -277,7 +280,7 @@ h4 {
 
 .linjeheader {
     color: #0020d0;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 100px;
 }
@@ -647,7 +650,7 @@ img {
 }
 
 .songTitle {
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     padding-top: 20%;
@@ -684,7 +687,7 @@ img {
 a {
     padding-top: 80px;
     color: white;
-    font-family: montserrat;
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 1.2em;
     text-decoration: none;
@@ -796,6 +799,24 @@ a {
     .sectionwrapper p {
         font-size: 0.9rem;
     }
+
+    .column1 {
+        padding: 0px 0px 0px 0px;
+    }
+
+    .linjeheader {
+        font-size: 3em;
+        padding-bottom: 20px;
+    }
+
+    .logo {
+        left: 20px;
+    }
+
+    .menu {
+        right: 20px;
+    }
+
 }
 
 
@@ -836,3 +857,5 @@ a {
         hyphens: auto;
     }
 }
+
+.foto-container {}
