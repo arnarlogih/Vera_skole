@@ -152,9 +152,9 @@ h4 {
 .logo {
     z-index: 100;
     position: fixed;
-    left: 50px;
-    top: 20px;
-    height: 50px;
+    left: 30px;
+    top: 19px;
+    height: 30px;
     width: auto;
 }
 
@@ -260,7 +260,9 @@ h4 {
 }
 
 iframe {
-    box-shadow: rgb(73, 73, 73) 3px 3px 20px;
+    box-shadow: -webkit-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
 /*-----------------LINJER----------------*/
@@ -286,7 +288,7 @@ iframe {
     flex-wrap: wrap;
     flex-direction: row;
     padding: 50px 50px 50px 50px;
-    margin-top: 100px;
+
 }
 
 .column1,
@@ -296,20 +298,29 @@ iframe {
     padding: 20px;
 }
 
+.column2 img {
+    box-shadow: -webkit-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
 .linjeheader {
     color: #0020d0;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
-    font-size: 100px;
+    font-size: 4em;
+    padding-bottom: 20px;
 }
 
-.billedkunstHeadline {
-    font-size: 90px;
+.linjeheader2 {
+    hyphens: auto;
+    color: #0020d0;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 4em;
+    padding-bottom: 20px;
 }
 
-.beklædningsdesignHeadline {
-    font-size: 50px;
-}
 
 p {
     text-align: justify;
@@ -326,6 +337,12 @@ p {
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
+}
+
+.flex {
+    box-shadow: -webkit-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
 /* ------------------LINJER BOXES------------------------- */
@@ -441,10 +458,13 @@ p {
 
 .aboutHeadline {
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .frontImage2 {
-    padding-top: 60px;
+    box-shadow: -webkit-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
 .aboutLine1 h3,
@@ -457,9 +477,14 @@ p {
     text-align: right;
 }
 
+.parentContainer2 {
+    padding-bottom: 60px;
+}
+
 .parentContainer2 a :hover {
     color: white;
 }
+
 
 
 .aboutLine1 {
@@ -565,6 +590,12 @@ p {
     padding-bottom: 50px;
 }
 
+.UdstillingImage img {
+    box-shadow: -webkit-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
 .UdstillingsWrapper {
     max-width: 100%;
     margin: auto;
@@ -582,7 +613,8 @@ h5 {
 .vrHeadline {
     align-self: start;
     justify-self: end;
-    margin-right: -30%;
+    margin-top: 120px;
+    margin-right: -60%;
     position: relative;
     z-index: 10;
 }
@@ -724,6 +756,10 @@ a {
 /*------------------------------------------ MEDIA QUERIES F. MOBILE VERSION-------------------------------*/
 @media screen and (max-width: 670px) {
 
+    .grid {
+        background-repeat: repeat;
+    }
+
     .beklædningsdesign h2 {
         transform: rotate(90deg);
         letter-spacing: 2px;
@@ -732,6 +768,18 @@ a {
     .overlay a {
         text-align: left;
         font-size: 50px;
+    }
+
+    .UdstillingsWrapper img {
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        width: 200px;
+    }
+
+    .UdstillingsWrapper {
+        text-align: left;
+        padding-bottom: 60px;
     }
 
     /*----------------- UDSTILLINGER ----------------------*/
@@ -749,8 +797,15 @@ a {
 
     }
 
+    .vrHeadline {
+        position: absolute;
+        bottom: 180px;
+        left: 5px;
+    }
+
     .vrUdstilling {
         margin-left: 20%;
+        padding-bottom: 120px;
     }
 
     .udstillingHeadline {
@@ -762,8 +817,6 @@ a {
     /*----------------- OM VERA ----------------------*/
     .frontImage2 {
         width: 180px;
-        padding-left: 20%;
-        padding-bottom: 20px;
     }
 
     .parentContainer2 h3 {
@@ -771,7 +824,7 @@ a {
     }
 
     .aboutLine1 {
-        top: 20%;
+        top: 5%;
         left: -80%;
         border-bottom: 2px solid black;
     }
@@ -789,7 +842,7 @@ a {
     }
 
     .aboutLine2 {
-        top: 40%;
+        top: 25%;
         left: -80%;
         border-bottom: 2px solid black;
     }
@@ -807,7 +860,7 @@ a {
     }
 
     .aboutLine3 {
-        top: 60%;
+        top: 45%;
         left: -80%;
         border-bottom: 2px solid black;
     }
@@ -825,7 +878,7 @@ a {
     }
 
     .aboutLine4 {
-        top: 80%;
+        top: 65%;
         left: -80%;
         border-bottom: 2px solid black;
     }
@@ -849,23 +902,25 @@ a {
         font-size: 0.9rem;
     }
 
-    .column1 {
-        padding: 0px 0px 0px 0px;
+    .wrapper {
+        padding: 0px 0px 0px 15px;
     }
 
+
     .linjeheader {
+        hyphens: auto;
         font-size: 3em;
         padding-bottom: 20px;
     }
 
-    .logo {
-        left: 20px;
+    .linjeheader2 {
+        hyphens: auto;
+        font-size: 2em;
     }
 
     .menu {
         right: 20px;
     }
-
 }
 
 
@@ -906,5 +961,3 @@ a {
         hyphens: auto;
     }
 }
-
-.foto-container {}
