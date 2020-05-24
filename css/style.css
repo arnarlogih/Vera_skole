@@ -194,6 +194,7 @@ h4 {
     flex-wrap: nowrap;
     margin: auto;
     width: 30%;
+    padding-bottom: 60px;
 }
 
 /*
@@ -477,9 +478,7 @@ p {
     text-align: right;
 }
 
-.parentContainer2 {
-    padding-bottom: 60px;
-}
+
 
 .parentContainer2 a :hover {
     color: white;
@@ -625,6 +624,13 @@ h5 {
     margin-left: -50%;
 }
 
+.udstillingHeadline2 {
+    justify-self: start;
+    align-self: end;
+    margin-left: -50%;
+    display: none;
+}
+
 img {
     /* width: 100%; */
     width: 100%;
@@ -756,8 +762,25 @@ a {
 /*------------------------------------------ MEDIA QUERIES F. MOBILE VERSION-------------------------------*/
 @media screen and (max-width: 670px) {
 
+    .logo {
+        left: 30px;
+        top: 27px;
+        height: 22px;
+
+    }
+
+    .menu {
+        right: 20px;
+    }
+
     .grid {
         background-repeat: repeat;
+    }
+
+    .content-wrapper {
+        margin-left: 34px;
+        margin-right: 0;
+        max-width: 90%;
     }
 
     .beklædningsdesign h2 {
@@ -766,8 +789,9 @@ a {
     }
 
     .overlay a {
+        padding-left: 30px;
         text-align: left;
-        font-size: 50px;
+        font-size: 2.5em;
     }
 
     .UdstillingsWrapper img {
@@ -792,6 +816,14 @@ a {
         font-size: 2em;
     }
 
+    #linjer h1 {
+        font-size: 2em;
+    }
+
+    #about h1 {
+        font-size: 2em;
+    }
+
     .exhibition-wrapper {
         margin-left: 60px;
 
@@ -809,14 +841,24 @@ a {
     }
 
     .udstillingHeadline {
+        display: none;
+    }
+
+    .udstillingHeadline2 {
+        display: block;
         position: absolute;
         top: 200px;
         left: 90px;
     }
 
     /*----------------- OM VERA ----------------------*/
+
+
+
     .frontImage2 {
-        width: 180px;
+        padding-left: 20px;
+        height: 300px;
+        width: 200px;
     }
 
     .parentContainer2 h3 {
@@ -894,18 +936,14 @@ a {
             width: 170px;
         }
     }
-}
 
-
-@media screen and (max-width: 780px) {
     .sectionwrapper p {
         font-size: 0.9rem;
     }
 
     .wrapper {
-        padding: 0px 0px 0px 15px;
+        margin-left: -35px;
     }
-
 
     .linjeheader {
         hyphens: auto;
@@ -917,11 +955,8 @@ a {
         hyphens: auto;
         font-size: 2em;
     }
-
-    .menu {
-        right: 20px;
-    }
 }
+
 
 
 @media screen and (max-width: 1500px) {
@@ -937,7 +972,7 @@ a {
         hyphens: auto;
     }
 
-    .udstillingHeadline {
+    .udstillingHeadline2 {
         hyphens: auto;
         margin-right: 200px;
     }
