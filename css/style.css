@@ -660,7 +660,7 @@ img {
     box-sizing: border-box;
 }
 
-.musicContainer {
+.eventContainer {
     max-width: 1200px;
     margin: 0 auto;
     justify-content: center;
@@ -709,7 +709,7 @@ img {
     box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.2);
 }
 
-.songTitle {
+.eventTitle {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -721,7 +721,7 @@ img {
     text-align: center;
 }
 
-.songDate {
+.eventDate {
     color: white;
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
