@@ -56,7 +56,7 @@ h4 {
 
 /*------------------------------------------ STYLING OF THE BURGER MENU ------------------------------*/
 .menu {
-    z-index: 90;
+    z-index: 40;
     position: fixed;
     top: 20px;
     right: 50px;
@@ -76,7 +76,7 @@ h4 {
     width: 0;
     position: fixed;
     /* Stay in place */
-    z-index: 1;
+    z-index: 50;
     /* Sit on top */
     left: 0;
     top: 0;
@@ -108,7 +108,6 @@ h4 {
 
 /* The navigation links inside the overlay */
 .overlay a {
-
     padding: 8px;
     text-decoration: none;
     font-size: 70px;
