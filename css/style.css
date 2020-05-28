@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500;700;800;900&display=swap");
 
 * {
     margin: 0;
@@ -20,21 +20,20 @@ body {
     background-color: #eae3de;
 }
 
-
 h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: #0020d0;
     font-size: 4em;
 }
 
 h2 {
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 h3 {
     color: black;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 2.5em;
 }
 
@@ -43,7 +42,6 @@ h4 {
     color: black;
     font-size: 1.8em;
 }
-
 
 /*------------------------------------------ BACKGROUND GRID ------------------------------*/
 
@@ -60,7 +58,7 @@ h4 {
     position: fixed;
     top: 20px;
     right: 50px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: white;
     font-size: 2.3em;
     font-weight: bold;
@@ -92,7 +90,7 @@ h4 {
 
 /* Position the content inside the overlay */
 .overlay-content {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     position: relative;
@@ -171,23 +169,19 @@ h4 {
     color: #0020d0;
 }
 
-
-
 #social {
     position: fixed;
     top: 300px;
     right: -190px;
     font-size: 1.5em;
     letter-spacing: 5px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     transform: rotate(90deg);
 }
-
 
 /*-----------------MAIN----------------*/
 
 .parentContainer2 {
-
     position: relative;
     display: flex;
     flex-wrap: nowrap;
@@ -237,7 +231,6 @@ h4 {
 }
 
 @keyframes moveUpDown {
-
     0%,
     100% {
         bottom: 0;
@@ -260,7 +253,7 @@ h4 {
 }
 
 iframe {
-    box-shadow: -webkit-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: -webkit-box-shadow 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
 }
@@ -268,7 +261,7 @@ iframe {
 /*-----------------LINJER----------------*/
 
 .tilmeld a {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-decoration: none;
     color: #eae3de;
     text-shadow: -1px -1px 0 #0020d0, 1px -1px 0 #0020d0, -1px 1px 0 #0020d0, 1px 1px 0 #0020d0;
@@ -288,7 +281,6 @@ iframe {
     flex-wrap: wrap;
     flex-direction: row;
     padding: 50px 50px 50px 50px;
-
 }
 
 .column1,
@@ -299,14 +291,14 @@ iframe {
 }
 
 .column2 img {
-    box-shadow: -webkit-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: -webkit-box-shadow 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
 }
 
 .linjeheader {
     color: #0020d0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-size: 4em;
     padding-bottom: 20px;
@@ -315,12 +307,11 @@ iframe {
 .linjeheader2 {
     hyphens: auto;
     color: #0020d0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     font-size: 4em;
     padding-bottom: 20px;
 }
-
 
 p {
     text-align: justify;
@@ -340,7 +331,7 @@ p {
 }
 
 .flex {
-    box-shadow: -webkit-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: -webkit-box-shadow 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
 }
@@ -455,14 +446,13 @@ p {
     text-align: center;
 }
 
-
 .aboutHeadline {
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .frontImage2 {
-    box-shadow: -webkit-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: -webkit-box-shadow 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
 }
@@ -477,13 +467,9 @@ p {
     text-align: right;
 }
 
-
-
 .parentContainer2 a :hover {
     color: white;
 }
-
-
 
 .aboutLine1 {
     display: block;
@@ -575,9 +561,6 @@ p {
     }
 }
 
-
-
-
 /*---------------------------------------- CODE FROM JANNECK ---------------------------*/
 .vrUdstilling {
     position: relative;
@@ -589,7 +572,7 @@ p {
 }
 
 .UdstillingImage img {
-    box-shadow: -webkit-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: -webkit-box-shadow 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
 }
@@ -639,8 +622,6 @@ img {
 .UdstillingsWrapper img {
     width: calc(150px + 400 * ((70vw - 320px) / 1080));
 }
-
-
 
 /* ----------------------- BACKEND WORDPRESS - WEBSITE CODE ----------------------- */
 
@@ -710,28 +691,27 @@ img {
 }
 
 .eventTitle {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
     padding-top: 20%;
     hyphens: auto;
     color: white;
     font-size: 2em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-align: center;
 }
 
 .eventDate {
     color: white;
     font-size: 1em;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     text-align: center;
 }
 
 .artwork:hover .artworkTitle {
     opacity: 1;
 }
-
 
 /* ---------------------------------------- FOOTER -------------------------------- */
 footer {
@@ -750,22 +730,18 @@ footer {
 a {
     padding-top: 80px;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
     text-align: center;
     font-size: 1.2em;
     text-decoration: none;
 }
 
-
-
 /*------------------------------------------ MEDIA QUERIES F. MOBILE VERSION-------------------------------*/
 @media screen and (max-width: 670px) {
-
     .logo {
         left: 30px;
         top: 27px;
         height: 22px;
-
     }
 
     .menu {
@@ -825,7 +801,6 @@ a {
 
     .exhibition-wrapper {
         margin-left: 60px;
-
     }
 
     .vrHeadline {
@@ -851,8 +826,6 @@ a {
     }
 
     /*----------------- OM VERA ----------------------*/
-
-
 
     .frontImage2 {
         padding-left: 20px;
@@ -956,8 +929,6 @@ a {
     }
 }
 
-
-
 @media screen and (max-width: 1500px) {
     .dot {
         display: none;
@@ -965,7 +936,6 @@ a {
 }
 
 @media screen and (max-width: 900px) {
-
     .vrUdstilling {
         padding-top: 50px;
         hyphens: auto;
@@ -982,7 +952,6 @@ a {
         right: -120px;
         font-size: 1em;
         letter-spacing: 4px;
-
     }
 
     .flex h2 {
