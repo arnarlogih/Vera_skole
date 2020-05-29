@@ -13,4 +13,5 @@ new kursor({
     removeDefaultCursor: true,
     color: "#f0370b"
 
+
 });

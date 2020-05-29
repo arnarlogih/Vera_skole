@@ -242,6 +242,7 @@ h4 {
     }
 }
 
+
 /*---------------------------------- UDSTILLING SITE -------------------------*/
 .box-container {
     padding-top: 60px;
@@ -281,14 +282,14 @@ iframe {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 50px 50px 50px 50px;
+    padding: 50px 0px 50px 50px;
 }
 
 .column1,
 .column2 {
     flex-basis: 100px;
     flex-grow: 2;
-    padding: 20px;
+    padding-left: 20px;
 }
 
 .column2 img {
@@ -562,14 +563,100 @@ p {
     }
 }
 
+/*---------------------------------- NEW EXHIBITION FRONT -------------------------*/
+.Exhibition-container {
+    margin: 20px;
+    text-align: center;
+}
+
+h5 {
+    font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+    color: #1d01d3;
+    font-size: calc(50px + 60 * ((100vw - 320px) / 1080));
+}
+
+.Virtual-title {
+    z-index: 10;
+    position: absolute;
+}
+
+.Exhibition-title1 {
+    z-index: 10;
+    position: relative;
+    left: 200px;
+    bottom: 140px;
+    hyphens: auto;
+}
+
+.Exhibition-title2 {
+    display: none;
+}
+
+img {
+    /* width: 100%; */
+    width: 100%;
+    object-fit: cover;
+}
+
+.ExhibitionImage img {
+    width: 50%;
+}
+
+.ExhibitionImage :hover {
+    transform: scale(1);
+    animation: pulse 3s infinite;
+    opacity: 60%;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.80);
+
+    }
+
+    70% {
+        transform: scale(1);
+
+    }
+
+    100% {
+        transform: scale(0.80);
+    }
+}
+
 /*---------------------------------------- CODE FROM JANNECK ---------------------------*/
-.vrUdstilling {
+/* .vrUdstilling {
     position: relative;
     display: flex;
     flex-wrap: nowrap;
     margin: auto;
     width: 100%;
     padding-bottom: 50px;
+
+}
+
+.UdstillingImage :hover {
+    transform: scale(1);
+    animation: pulse 3s infinite;
+    opacity: 60%;
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.80);
+
+    }
+
+    70% {
+        transform: scale(1);
+
+    }
+
+    100% {
+        transform: scale(0.80);
+    }
 }
 
 .UdstillingImage img {
@@ -585,13 +672,6 @@ p {
     grid-template-columns: 1fr auto 1fr;
 }
 
-h5 {
-    font-family: "montserrat", sans-serif;
-    text-transform: uppercase;
-    color: #1d01d3;
-    font-size: calc(50px + 60 * ((100vw - 320px) / 1080));
-}
-
 .vrHeadline {
     align-self: start;
     justify-self: end;
@@ -602,6 +682,7 @@ h5 {
 }
 
 .udstillingHeadline {
+    z-index: 10;
     justify-self: start;
     align-self: end;
     margin-left: -50%;
@@ -614,15 +695,10 @@ h5 {
     display: none;
 }
 
-img {
-    /* width: 100%; */
-    width: 100%;
-    object-fit: cover;
-}
 
 .UdstillingsWrapper img {
     width: calc(150px + 400 * ((70vw - 320px) / 1080));
-}
+} */
 
 /* ----------------------- BACKEND WORDPRESS - WEBSITE CODE ----------------------- */
 
@@ -782,15 +858,12 @@ a {
         padding-bottom: 60px;
     }
 
-    /*----------------- UDSTILLINGER ----------------------*/
+    /*------------------ UDSTILLINGER ----------------------*/
     .artwork {
         width: 250px;
         height: 250px;
     }
 
-    .UdstillingerHeadline {
-        font-size: 2em;
-    }
 
     #linjer h1 {
         font-size: 2em;
@@ -800,31 +873,20 @@ a {
         font-size: 2em;
     }
 
-    .exhibition-wrapper {
-        margin-left: 60px;
-    }
 
-    .vrHeadline {
-        position: absolute;
-        bottom: 180px;
-        left: 5px;
-    }
 
-    .vrUdstilling {
-        width: 50%;
-        margin-left: 20%;
-        padding-bottom: 120px;
-    }
-
-    .udstillingHeadline {
+    .Exhibition-title1 {
         display: none;
     }
 
-    .udstillingHeadline2 {
+
+
+    .Exhibition-title2 {
+        text-align: left;
         display: block;
         position: absolute;
-        top: 200px;
-        left: 90px;
+        top: 220px;
+        left: 40px;
     }
 
     /*----------------- OM VERA ----------------------*/
@@ -938,15 +1000,7 @@ a {
 }
 
 @media screen and (max-width: 900px) {
-    .vrUdstilling {
-        padding-top: 50px;
-        hyphens: auto;
-    }
 
-    .udstillingHeadline2 {
-        hyphens: auto;
-        margin-right: 200px;
-    }
 
     #social {
         position: fixed;
