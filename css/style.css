@@ -604,8 +604,11 @@ img {
 }
 
 .ExhibitionImage :hover {
+    box-shadow: -webkit-box-shadow 10px 10px 40px 0px rgba(0, 0, 0, 15);
+    -moz-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 15);
+    box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 15);
     transform: scale(1);
-    animation: pulse 3s infinite;
+    animation: pulse 2s infinite;
     opacity: 60%;
 }
 
@@ -1064,4 +1067,62 @@ a {
 
 .links a:hover {
     color: white;
+}
+
+.arrows {
+    padding-left: 55px;
+    padding-bottom: 85px;
+}
+
+
+.linje_arrow1 {
+
+    animation: left 2s linear infinite;
+    position: absolute;
+    padding: 10px;
+    width: 80px;
+    height: auto;
+}
+
+
+@keyframes left {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+}
+
+
+.linje_arrow2 {
+    animation: right 2s linear infinite;
+    position: absolute;
+    left: 180px;
+    padding: 10px;
+    width: 80px;
+    height: auto;
+}
+
+@keyframes right {
+
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        transform: translateX(-10px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
 }
