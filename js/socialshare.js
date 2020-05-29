@@ -12,10 +12,15 @@ function socialWindow(url) {
 
 function setShareLinks() {
     var pageUrl = encodeURIComponent(document.URL);
-    var tweet = encodeURIComponent($("meta[property='og:description']").attr("content"));
 
-    $(".social-share.social-facebook").on("click", function () {
+
+    $(".social-share.facebook").on("click", function () {
         url = "https://www.facebook.com/sharer.php?u=" + pageUrl;
         socialWindow(url);
     });
+
+    $(".social-share.linkedin").on("click", function () {
+        url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageUrl;
+        socialWindow(url);
+    })
 }

@@ -712,7 +712,7 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
     position: relative;
-    max-width: 80%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     box-sizing: border-box;
@@ -862,6 +862,12 @@ a {
         padding-bottom: 60px;
     }
 
+    /*------------------ EXHIBITION SITE FLEX BOXES ----------------------*/
+    .exhibition-wrapper {
+        width: 100%;
+        margin-left: 60px;
+    }
+
     /*------------------ UDSTILLINGER ----------------------*/
     .artwork {
         width: 250px;
@@ -882,7 +888,6 @@ a {
     .Exhibition-title1 {
         display: none;
     }
-
 
 
     .Exhibition-title2 {
@@ -1049,21 +1054,14 @@ a {
     padding-top: 10px;
 }
 
-.links ul {
-
+.links a {
+    cursor: pointer;
     font-family: "Montserrat", sans-serif;
     color: #0020d0;
     list-style: none;
-    padding: 0;
     margin: 0 0 20px 0;
 }
 
-.links li {
-    font-size: 16px;
-    text-align: left;
-    cursor: pointer;
-}
-
-.links li:hover {
-    text-decoration: underline;
+.links a:hover {
+    color: white;
 }
