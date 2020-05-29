@@ -835,6 +835,10 @@ a {
         max-width: 90%;
     }
 
+    .ExhibitionImage img {
+        width: 60%;
+    }
+
     .beklædningsdesign h2 {
         transform: rotate(90deg);
         letter-spacing: 2px;
@@ -1024,9 +1028,7 @@ a {
 
 .inline-photo {
     opacity: 0;
-    -webkit-transform: translateX(1em);
-    transform: translateX(1em);
-    -webkit-transition: opacity .3s .25s ease-out,
+    -webkit-transition: opacity 3s .25s ease-out,
         -webkit-transform 4s .25s cubic-bezier(0, 1, .3, 1);
     transition: opacity .3s .25s ease-out,
         -webkit-transform 4s .25s cubic-bezier(0, 1, .3, 1);
