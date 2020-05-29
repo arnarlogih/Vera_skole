@@ -1043,5 +1043,27 @@ a {
 
 .inline-photo.is-visible {
     opacity: 1;
+}
 
+.links {
+    padding-top: 10px;
+}
+
+.links ul {
+
+    font-family: "Montserrat", sans-serif;
+    color: #0020d0;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.links li {
+    font-size: 16px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.links li:hover {
+    text-decoration: underline;
 }
