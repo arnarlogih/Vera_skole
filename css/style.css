@@ -260,7 +260,6 @@ h5 {
 }
 
 img {
-    width: 100%;
     object-fit: cover;
 }
 
@@ -359,6 +358,7 @@ iframe {
 }
 
 .column2 img {
+    width: 100%;
     box-shadow: -webkit-box-shadow 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
@@ -403,7 +403,7 @@ p {
 }
 
 
-@keyframes left {
+/* @keyframes left {
 
     0%,
     20%,
@@ -417,7 +417,7 @@ p {
     50% {
         transform: translateX(-10px);
     }
-}
+} */
 
 
 .linje_arrow2 img {
@@ -429,7 +429,7 @@ p {
     height: 50px;
 }
 
-@keyframes right {
+/* @keyframes right {
 
     0%,
     20%,
@@ -443,7 +443,7 @@ p {
     50% {
         transform: translateX(0);
     }
-}
+} */
 
 /*-----------------TILMELD BUTTON ON EACH LINJE SITE----------------*/
 .tilmeld a {
