@@ -403,7 +403,7 @@ p {
 }
 
 
-/* @keyframes left {
+@keyframes left {
 
     0%,
     20%,
@@ -417,7 +417,7 @@ p {
     50% {
         transform: translateX(-10px);
     }
-} */
+}
 
 
 .linje_arrow2 img {
@@ -429,7 +429,7 @@ p {
     height: 50px;
 }
 
-/* @keyframes right {
+@keyframes right {
 
     0%,
     20%,
@@ -443,7 +443,7 @@ p {
     50% {
         transform: translateX(0);
     }
-} */
+}
 
 /*-----------------TILMELD BUTTON ON EACH LINJE SITE----------------*/
 .tilmeld a {
