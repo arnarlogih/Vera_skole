@@ -393,13 +393,13 @@ p {
     padding-bottom: 85px;
 }
 
-.linje_arrow1 {
+.linje_arrow1 img {
 
     animation: left 2s linear infinite;
     position: absolute;
     padding: 10px;
     width: 80px;
-    height: auto;
+    height: 50px;
 }
 
 
@@ -420,13 +420,13 @@ p {
 }
 
 
-.linje_arrow2 {
+.linje_arrow2 img {
     animation: right 2s linear infinite;
     position: absolute;
     left: 180px;
     padding: 10px;
     width: 80px;
-    height: auto;
+    height: 50px;
 }
 
 @keyframes right {
@@ -999,7 +999,7 @@ a {
 }
 
 /*----------- DOT DISAPPEARS WHEN FRAME SIZE IS ADJUSTED --------- */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
     .dot {
         display: none;
     }
