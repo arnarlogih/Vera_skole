@@ -987,14 +987,15 @@ a {
     }
 }
 
-/*----------- DOT DISAPPEARS WHEN FRAME SIZE IS ADJUSTED --------- */
+
+
 @media screen and (max-width: 900px) {
+    /*----------- DOT DISAPPEARS WHEN FRAME SIZE IS ADJUSTED --------- */
+
     .dot {
         display: none;
     }
-}
 
-@media screen and (max-width: 900px) {
     #social {
         position: fixed;
         top: 220px;
