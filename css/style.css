@@ -22,6 +22,10 @@ body {
     background-color: #eae3de;
 }
 
+.column1 p {
+    font-family: "Helvetica", sans-serif;
+}
+
 h1 {
     font-family: "Montserrat", sans-serif;
     color: #0020d0;
@@ -988,10 +992,9 @@ a {
 }
 
 
-
 @media screen and (max-width: 900px) {
-    /*----------- DOT DISAPPEARS WHEN FRAME SIZE IS ADJUSTED --------- */
 
+    /*----------- DOT DISAPPEARS WHEN FRAME SIZE IS ADJUSTED --------- */
     .dot {
         display: none;
     }
