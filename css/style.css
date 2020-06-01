@@ -811,8 +811,22 @@ a {
     text-decoration: none;
 }
 
+
+.mobileheader {
+    display: none;
+}
+
+
 /*------------------------------------------ MEDIA QUERIES F. MOBILE VERSION-------------------------------*/
 @media screen and (max-width: 670px) {
+
+    .billedkunstHeadline {
+        display: none;
+    }
+
+    .mobileheader {
+        display: block;
+    }
 
     /*------------------ GENERAL ADJUSTMENTS ON MOBILE VERSION ----------------------*/
     .logo {
