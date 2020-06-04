@@ -228,7 +228,7 @@ h4 {
     color: white;
 }
 
-/*---------------------------------- VIRTUAL UDSTILLING ON FRONTPAGE-------------------------*/
+/*---------------------------------- NEW EXHIBITION FRONT-------------------------*/
 .Exhibition-container {
     margin: 20px;
     text-align: center;
@@ -332,6 +332,15 @@ iframe {
     box-shadow: -webkit-box-shadow 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+/*---------------------------------- UDSTILLINGER SITE (ADJUSTING TITLES AND FRAMES) -------------------------*/
+.mobileheader {
+    display: none;
+}
+
+.udstilMobile {
+    display: none;
 }
 
 /*-----------------ADJUSTMENTS FOR EACH LINJE SITE----------------*/
@@ -812,14 +821,13 @@ a {
 }
 
 
-.mobileheader {
-    display: none;
-}
+
 
 
 /*------------------------------------------ MEDIA QUERIES F. MOBILE VERSION-------------------------------*/
 @media screen and (max-width: 670px) {
 
+    /*------------------ EXHIBITION FRAMES AND TITLES CHANGE----------------------*/
     .billedkunstHeadline {
         display: none;
     }
@@ -827,6 +835,14 @@ a {
     .mobileheader {
         display: block;
     }
+
+    .udstilMobile {
+        display: block;
+        text-align: left;
+        margin: 30px;
+        font-size: 3em;
+    }
+
 
     /*------------------ GENERAL ADJUSTMENTS ON MOBILE VERSION ----------------------*/
     .logo {
@@ -865,6 +881,7 @@ a {
     .exhibition-wrapper {
         width: 100%;
         margin-left: 60px;
+        padding-top: 0px;
     }
 
     .Exhibition-container {
