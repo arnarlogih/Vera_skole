@@ -234,6 +234,22 @@ h4 {
     text-align: center;
 }
 
+.img_description {
+    position: absolute;
+    left: 46%;
+    bottom: 50%;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 1em;
+    opacity: 0;
+}
+
+.box:hover .img_description {
+    opacity: 1;
+}
+
+
 h5 {
     font-family: "montserrat", sans-serif;
     text-transform: uppercase;
