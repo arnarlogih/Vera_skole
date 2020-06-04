@@ -236,7 +236,8 @@ h4 {
 
 .img_description {
     position: absolute;
-    left: 46%;
+    text-align: center;
+    left: 50%;
     bottom: 50%;
     font-family: "Montserrat", sans-serif;
     color: white;
