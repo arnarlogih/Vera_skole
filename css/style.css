@@ -23,7 +23,7 @@ body {
 }
 
 .column1 p {
-    font-family: "Helvetica", sans-serif;
+    font-family: "Helvetica Neue";
 }
 
 h1 {
@@ -346,7 +346,6 @@ iframe {
 /*-----------------ADJUSTMENTS FOR EACH LINJE SITE----------------*/
 
 .wrapper {
-    text-align: justify;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
