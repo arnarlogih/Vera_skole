@@ -293,6 +293,7 @@ img {
 /*-----------------DOT----------------*/
 
 .dot {
+    z-index: 10;
     height: 40px;
     width: 40px;
     border-radius: 50%;
