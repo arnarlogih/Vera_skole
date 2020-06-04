@@ -235,15 +235,16 @@ h4 {
 }
 
 .img_description {
-    position: absolute;
     text-align: center;
-    left: 50%;
-    bottom: 50%;
     font-family: "Montserrat", sans-serif;
     color: white;
     letter-spacing: 2px;
     font-size: 1em;
     opacity: 0;
+}
+
+.img_description p {
+    text-align: center;
 }
 
 .box:hover .img_description {
